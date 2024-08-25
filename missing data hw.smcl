@@ -1,0 +1,1662 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\cho.710\Desktop\missing data hw.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}25 Mar 2023, 10:28:54
+
+{com}. use "C:\Users\cho.710\Downloads\HW4.2023.dta"
+
+. do "C:\Users\cho.710\AppData\Local\Temp\47\STD5638_000000.tmp"
+{txt}
+{com}. ** Checking variables & recoding variables for depressive variable  
+. 
+. codebook P2BOTHER P2APPETI P2BLUE P2KPMIND P2DEPRES P2EFFORT P2FEARFL 
+
+{txt}{hline}
+{res}P2BOTHER{right:P2 PPQ100 RESP UNUSUALLY BOTHERED}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:P2BOTHER}
+
+{col 18}range:  [{res}-9{txt},{res}4{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}8{col 51}{txt}missing .:  {res}4,563{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}       844{col 33}      -9{col 43}{txt}-9: NOT ASCERTAINED
+{col 21}{res}        50{col 33}      -8{col 43}{txt}-8: DON'T KNOW
+{col 21}{res}        67{col 33}      -7{col 43}{txt}-7: REFUSED
+{col 21}{res}       115{col 33}      -1{col 43}{txt}-1: NOT APPLICABLE
+{col 21}{res}     7,995{col 33}       1{col 43}{txt}1: NEVER
+{col 21}{res}     3,638{col 33}       2{col 43}{txt}2: SOME OF THE TIME
+{col 21}{res}       655{col 33}       3{col 43}{txt}3: A MODERATE AMOUNT OF THE TIME
+{col 21}{res}       247{col 33}       4{col 43}{txt}4: MOST OF THE TIME
+{col 21}{res}     4,563{col 33}       .{col 43}
+
+{txt}{hline}
+{res}P2APPETI{right:P2 PPQ110 RESP POOR APPETITE}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:P2APPETI}
+
+{col 18}range:  [{res}-9{txt},{res}4{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}8{col 51}{txt}missing .:  {res}4,563{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}       847{col 33}      -9{col 43}{txt}-9: NOT ASCERTAINED
+{col 21}{res}        41{col 33}      -8{col 43}{txt}-8: DON'T KNOW
+{col 21}{res}        70{col 33}      -7{col 43}{txt}-7: REFUSED
+{col 21}{res}       115{col 33}      -1{col 43}{txt}-1: NOT APPLICABLE
+{col 21}{res}     9,640{col 33}       1{col 43}{txt}1: NEVER
+{col 21}{res}     2,113{col 33}       2{col 43}{txt}2: SOME OF THE TIME
+{col 21}{res}       458{col 33}       3{col 43}{txt}3: A MODERATE AMOUNT OF THE TIME
+{col 21}{res}       327{col 33}       4{col 43}{txt}4: MOST OF THE TIME
+{col 21}{res}     4,563{col 33}       .{col 43}
+
+{txt}{hline}
+{res}P2BLUE{right:P2 PPQ120 RESP CAN'T SHAKE BLUES}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:P2BLUE}
+
+{col 18}range:  [{res}-9{txt},{res}4{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}8{col 51}{txt}missing .:  {res}4,563{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}       848{col 33}      -9{col 43}{txt}-9: NOT ASCERTAINED
+{col 21}{res}        57{col 33}      -8{col 43}{txt}-8: DON'T KNOW
+{col 21}{res}        68{col 33}      -7{col 43}{txt}-7: REFUSED
+{col 21}{res}       115{col 33}      -1{col 43}{txt}-1: NOT APPLICABLE
+{col 21}{res}    10,716{col 33}       1{col 43}{txt}1: NEVER
+{col 21}{res}     1,387{col 33}       2{col 43}{txt}2: SOME OF THE TIME
+{col 21}{res}       257{col 33}       3{col 43}{txt}3: A MODERATE AMOUNT OF THE TIME
+{col 21}{res}       163{col 33}       4{col 43}{txt}4: MOST OF THE TIME
+{col 21}{res}     4,563{col 33}       .{col 43}
+
+{txt}{hline}
+{res}P2KPMIND{right:P2 PPQ130 RESP TROUBLE FOCUSING}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:P2KPMIND}
+
+{col 18}range:  [{res}-9{txt},{res}4{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}8{col 51}{txt}missing .:  {res}4,563{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}       848{col 33}      -9{col 43}{txt}-9: NOT ASCERTAINED
+{col 21}{res}        41{col 33}      -8{col 43}{txt}-8: DON'T KNOW
+{col 21}{res}        72{col 33}      -7{col 43}{txt}-7: REFUSED
+{col 21}{res}       115{col 33}      -1{col 43}{txt}-1: NOT APPLICABLE
+{col 21}{res}     7,658{col 33}       1{col 43}{txt}1: NEVER
+{col 21}{res}     3,918{col 33}       2{col 43}{txt}2: SOME OF THE TIME
+{col 21}{res}       597{col 33}       3{col 43}{txt}3: A MODERATE AMOUNT OF THE TIME
+{col 21}{res}       362{col 33}       4{col 43}{txt}4: MOST OF THE TIME
+{col 21}{res}     4,563{col 33}       .{col 43}
+
+{txt}{hline}
+{res}P2DEPRES{right:P2 PPQ140 RESP FELT DEPRESSED}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:P2DEPRES}
+
+{col 18}range:  [{res}-9{txt},{res}4{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}8{col 51}{txt}missing .:  {res}4,563{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}       849{col 33}      -9{col 43}{txt}-9: NOT ASCERTAINED
+{col 21}{res}        42{col 33}      -8{col 43}{txt}-8: DON'T KNOW
+{col 21}{res}        74{col 33}      -7{col 43}{txt}-7: REFUSED
+{col 21}{res}       115{col 33}      -1{col 43}{txt}-1: NOT APPLICABLE
+{col 21}{res}    10,083{col 33}       1{col 43}{txt}1: NEVER
+{col 21}{res}     1,895{col 33}       2{col 43}{txt}2: SOME OF THE TIME
+{col 21}{res}       348{col 33}       3{col 43}{txt}3: A MODERATE AMOUNT OF THE TIME
+{col 21}{res}       205{col 33}       4{col 43}{txt}4: MOST OF THE TIME
+{col 21}{res}     4,563{col 33}       .{col 43}
+
+{txt}{hline}
+{res}P2EFFORT{right:P2 PPQ150 RESP EVERYTHING AN EFFORT}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:P2EFFORT}
+
+{col 18}range:  [{res}-9{txt},{res}4{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}8{col 51}{txt}missing .:  {res}4,563{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}       850{col 33}      -9{col 43}{txt}-9: NOT ASCERTAINED
+{col 21}{res}        61{col 33}      -8{col 43}{txt}-8: DON'T KNOW
+{col 21}{res}        72{col 33}      -7{col 43}{txt}-7: REFUSED
+{col 21}{res}       115{col 33}      -1{col 43}{txt}-1: NOT APPLICABLE
+{col 21}{res}     7,837{col 33}       1{col 43}{txt}1: NEVER
+{col 21}{res}     3,176{col 33}       2{col 43}{txt}2: SOME OF THE TIME
+{col 21}{res}       545{col 33}       3{col 43}{txt}3: A MODERATE AMOUNT OF THE TIME
+{col 21}{res}       955{col 33}       4{col 43}{txt}4: MOST OF THE TIME
+{col 21}{res}     4,563{col 33}       .{col 43}
+
+{txt}{hline}
+{res}P2FEARFL{right:P2 PPQ160 RESP FELT FEARFUL}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:P2FEARFL}
+
+{col 18}range:  [{res}-9{txt},{res}4{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}8{col 51}{txt}missing .:  {res}4,563{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}       851{col 33}      -9{col 43}{txt}-9: NOT ASCERTAINED
+{col 21}{res}        40{col 33}      -8{col 43}{txt}-8: DON'T KNOW
+{col 21}{res}        72{col 33}      -7{col 43}{txt}-7: REFUSED
+{col 21}{res}       115{col 33}      -1{col 43}{txt}-1: NOT APPLICABLE
+{col 21}{res}    11,050{col 33}       1{col 43}{txt}1: NEVER
+{col 21}{res}     1,133{col 33}       2{col 43}{txt}2: SOME OF THE TIME
+{col 21}{res}       200{col 33}       3{col 43}{txt}3: A MODERATE AMOUNT OF THE TIME
+{col 21}{res}       150{col 33}       4{col 43}{txt}4: MOST OF THE TIME
+{col 21}{res}     4,563{col 33}       .{col 43}
+{txt}
+{com}. codebook P2RESTLS P2TALKLS P2LONELY P2SAD P2NOTGO
+
+{txt}{hline}
+{res}P2RESTLS{right:P2 PPQ170 RESP SLEEP RESTLESS}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:P2RESTLS}
+
+{col 18}range:  [{res}-9{txt},{res}4{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}8{col 51}{txt}missing .:  {res}4,563{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}       851{col 33}      -9{col 43}{txt}-9: NOT ASCERTAINED
+{col 21}{res}        42{col 33}      -8{col 43}{txt}-8: DON'T KNOW
+{col 21}{res}        74{col 33}      -7{col 43}{txt}-7: REFUSED
+{col 21}{res}       115{col 33}      -1{col 43}{txt}-1: NOT APPLICABLE
+{col 21}{res}     6,280{col 33}       1{col 43}{txt}1: NEVER
+{col 21}{res}     4,254{col 33}       2{col 43}{txt}2: SOME OF THE TIME
+{col 21}{res}       953{col 33}       3{col 43}{txt}3: A MODERATE AMOUNT OF THE TIME
+{col 21}{res}     1,042{col 33}       4{col 43}{txt}4: MOST OF THE TIME
+{col 21}{res}     4,563{col 33}       .{col 43}
+
+{txt}{hline}
+{res}P2TALKLS{right:P2 PPQ180 RESP TALKED LESS THAN USUAL}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:P2TALKLS}
+
+{col 18}range:  [{res}-9{txt},{res}4{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}8{col 51}{txt}missing .:  {res}4,563{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}       851{col 33}      -9{col 43}{txt}-9: NOT ASCERTAINED
+{col 21}{res}        39{col 33}      -8{col 43}{txt}-8: DON'T KNOW
+{col 21}{res}        75{col 33}      -7{col 43}{txt}-7: REFUSED
+{col 21}{res}       115{col 33}      -1{col 43}{txt}-1: NOT APPLICABLE
+{col 21}{res}    10,619{col 33}       1{col 43}{txt}1: NEVER
+{col 21}{res}     1,509{col 33}       2{col 43}{txt}2: SOME OF THE TIME
+{col 21}{res}       245{col 33}       3{col 43}{txt}3: A MODERATE AMOUNT OF THE TIME
+{col 21}{res}       158{col 33}       4{col 43}{txt}4: MOST OF THE TIME
+{col 21}{res}     4,563{col 33}       .{col 43}
+
+{txt}{hline}
+{res}P2LONELY{right:P2 PPQ190 RESP FELT LONELY}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:P2LONELY}
+
+{col 18}range:  [{res}-9{txt},{res}4{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}8{col 51}{txt}missing .:  {res}4,563{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}       852{col 33}      -9{col 43}{txt}-9: NOT ASCERTAINED
+{col 21}{res}        42{col 33}      -8{col 43}{txt}-8: DON'T KNOW
+{col 21}{res}        75{col 33}      -7{col 43}{txt}-7: REFUSED
+{col 21}{res}       115{col 33}      -1{col 43}{txt}-1: NOT APPLICABLE
+{col 21}{res}    10,520{col 33}       1{col 43}{txt}1: NEVER
+{col 21}{res}     1,503{col 33}       2{col 43}{txt}2: SOME OF THE TIME
+{col 21}{res}       280{col 33}       3{col 43}{txt}3: A MODERATE AMOUNT OF THE TIME
+{col 21}{res}       224{col 33}       4{col 43}{txt}4: MOST OF THE TIME
+{col 21}{res}     4,563{col 33}       .{col 43}
+
+{txt}{hline}
+{res}P2SAD{right:P2 PPQ200 RESP FELT SAD}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:P2SAD}
+
+{col 18}range:  [{res}-9{txt},{res}4{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}8{col 51}{txt}missing .:  {res}4,563{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}       853{col 33}      -9{col 43}{txt}-9: NOT ASCERTAINED
+{col 21}{res}        41{col 33}      -8{col 43}{txt}-8: DON'T KNOW
+{col 21}{res}        75{col 33}      -7{col 43}{txt}-7: REFUSED
+{col 21}{res}       115{col 33}      -1{col 43}{txt}-1: NOT APPLICABLE
+{col 21}{res}     8,515{col 33}       1{col 43}{txt}1: NEVER
+{col 21}{res}     3,306{col 33}       2{col 43}{txt}2: SOME OF THE TIME
+{col 21}{res}       466{col 33}       3{col 43}{txt}3: A MODERATE AMOUNT OF THE TIME
+{col 21}{res}       240{col 33}       4{col 43}{txt}4: MOST OF THE TIME
+{col 21}{res}     4,563{col 33}       .{col 43}
+
+{txt}{hline}
+{res}P2NOTGO{right:P2 PPQ210 RESP FELT COULD NOT GET GOING}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:P2NOTGO}
+
+{col 18}range:  [{res}-9{txt},{res}4{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}8{col 51}{txt}missing .:  {res}4,563{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}       854{col 33}      -9{col 43}{txt}-9: NOT ASCERTAINED
+{col 21}{res}        44{col 33}      -8{col 43}{txt}-8: DON'T KNOW
+{col 21}{res}        77{col 33}      -7{col 43}{txt}-7: REFUSED
+{col 21}{res}       115{col 33}      -1{col 43}{txt}-1: NOT APPLICABLE
+{col 21}{res}     8,578{col 33}       1{col 43}{txt}1: NEVER
+{col 21}{res}     3,246{col 33}       2{col 43}{txt}2: SOME OF THE TIME
+{col 21}{res}       431{col 33}       3{col 43}{txt}3: A MODERATE AMOUNT OF THE TIME
+{col 21}{res}       266{col 33}       4{col 43}{txt}4: MOST OF THE TIME
+{col 21}{res}     4,563{col 33}       .{col 43}
+{txt}
+{com}. 
+. recode P2BOTHER (-9=.) (-8=.) (-7=.) (-1=.), generate (dep1)
+{txt}(1076 differences between P2BOTHER and dep1)
+
+{com}. recode P2APPETI (-9=.) (-8=.) (-7=.) (-1=.), generate (dep2)
+{txt}(1073 differences between P2APPETI and dep2)
+
+{com}. recode  P2BLUE (-9=.) (-8=.) (-7=.) (-1=.), generate (dep3)
+{txt}(1088 differences between P2BLUE and dep3)
+
+{com}. recode P2KPMIND (-9=.) (-8=.) (-7=.) (-1=.), generate (dep4)
+{txt}(1076 differences between P2KPMIND and dep4)
+
+{com}. recode P2DEPRES (-9=.) (-8=.) (-7=.) (-1=.), generate (dep5)
+{txt}(1080 differences between P2DEPRES and dep5)
+
+{com}. recode P2EFFORT (-9=.) (-8=.) (-7=.) (-1=.), generate (dep6)
+{txt}(1098 differences between P2EFFORT and dep6)
+
+{com}. recode P2FEARFL (-9=.) (-8=.) (-7=.) (-1=.), generate (dep7)
+{txt}(1078 differences between P2FEARFL and dep7)
+
+{com}. recode P2RESTLS (-9=.) (-8=.) (-7=.) (-1=.), generate (dep8)
+{txt}(1082 differences between P2RESTLS and dep8)
+
+{com}. recode P2TALKLS (-9=.) (-8=.) (-7=.) (-1=.), generate (dep9)
+{txt}(1080 differences between P2TALKLS and dep9)
+
+{com}. recode P2LONELY (-9=.) (-8=.) (-7=.) (-1=.), generate (dep10)
+{txt}(1084 differences between P2LONELY and dep10)
+
+{com}. recode P2SAD (-9=.) (-8=.) (-7=.) (-1=.), generate (dep11)
+{txt}(1084 differences between P2SAD and dep11)
+
+{com}. recode P2NOTGO (-9=.) (-8=.) (-7=.) (-1=.), generate (dep12)
+{txt}(1090 differences between P2NOTGO and dep12)
+
+{com}.  
+.  
+. ** checking variable and recoding for academic achievement
+. codebook X2RSCALK4 X2MSCALK4 X2SSCALK4
+
+{txt}{hline}
+{res}X2RSCALK4{right:X2 READING IRT SCALE SCORE-K4 DATA FILE}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}double{txt})
+{ralign 22:label}:  {res:_9F}, but {res:12611} nonmissing values are not labeled
+
+{col 18}range:  [{res}-9{txt},{res}125.0272{txt}]{col 55}units:  {res}.0001
+{col 10}{txt}unique values:  {res}12,612{col 51}{txt}missing .:  {res}959{txt}/{res}18,174
+
+{txt}{ralign 23: examples:}{col 26}{res}56.0702{col 32}{txt}
+{ralign 23: }{col 26}{res}62.6742{col 32}{txt}
+{ralign 23: }{col 26}{res}69.1411{col 32}{txt}
+{ralign 23: }{col 26}{res}79.9816{col 32}{txt}
+
+{txt}{hline}
+{res}X2MSCALK4{right:X2 MATH IRT SCALE SCORE--K4 DATA FILE}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}double{txt})
+{ralign 22:label}:  {res:_9F}, but {res:12423} nonmissing values are not labeled
+
+{col 18}range:  [{res}-9{txt},{res}98.2882{txt}]{col 55}units:  {res}.0001
+{col 10}{txt}unique values:  {res}12,424{col 51}{txt}missing .:  {res}959{txt}/{res}18,174
+
+{txt}{ralign 23: examples:}{col 26}{res}37.8343{col 32}{txt}
+{ralign 23: }{col 26}{res}46.2131{col 32}{txt}
+{ralign 23: }{col 26}{res}52.8258{col 32}{txt}
+{ralign 23: }{col 26}{res}61.2209{col 32}{txt}
+
+{txt}{hline}
+{res}X2SSCALK4{right:X2 SCIENCE IRT SCALE SCORE-K4 DATA FILE}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}double{txt})
+{ralign 22:label}:  {res:_9F}, but {res:9910} nonmissing values are not labeled
+
+{col 18}range:  [{res}-9{txt},{res}54.5415{txt}]{col 55}units:  {res}.0001
+{col 10}{txt}unique values:  {res}9,911{col 51}{txt}missing .:  {res}959{txt}/{res}18,174
+
+{txt}{ralign 23: examples:}{col 26}{res}26.4587{col 32}{txt}
+{ralign 23: }{col 26}{res}31.6682{col 32}{txt}
+{ralign 23: }{col 26}{res}36.0768{col 32}{txt}
+{ralign 23: }{col 26}{res}41.2925{col 32}{txt}
+
+{com}. **all continuous 
+. describe X2RSCALK4 X2MSCALK4 X2SSCALK4
+
+              {txt}storage   display    value
+variable name   type    format     label      variable label
+{hline}
+{p 0 48}{res}{bind:X2RSCALK4      }{txt}{bind: double  }{bind:{txt}%19.0g    }{space 1}{bind:_9F      }{bind:  }{res}{res}X2 READING IRT SCALE SCORE-K4 DATA FILE{p_end}
+{p 0 48}{bind:X2MSCALK4      }{txt}{bind: double  }{bind:{txt}%19.0g    }{space 1}{bind:_9F      }{bind:  }{res}{res}X2 MATH IRT SCALE SCORE--K4 DATA FILE{p_end}
+{p 0 48}{bind:X2SSCALK4      }{txt}{bind: double  }{bind:{txt}%19.0g    }{space 1}{bind:_9F      }{bind:  }{res}{res}X2 SCIENCE IRT SCALE SCORE-K4 DATA FILE{p_end}
+{txt}
+{com}. 
+. recode X2RSCALK4 (-9=.) (-8=.) (-7=.) (-1=.), generate (reading)
+{txt}(29 differences between X2RSCALK4 and reading)
+
+{com}. sum reading
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 5}reading {c |}{res}     17,186    66.73915    13.91532    31.6503   125.0272
+{txt}
+{com}. recode X2MSCALK4 (-9=.) (-8=.) (-7=.) (-1=.), generate (math)
+{txt}(72 differences between X2MSCALK4 and math)
+
+{com}. recode X2SSCALK4 (-9=.) (-8=.) (-7=.) (-1=.), generate (science)
+{txt}(279 differences between X2SSCALK4 and science)
+
+{com}. sum math science
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}math {c |}{res}     17,143    48.51386    12.70654     9.7646    98.2882
+{txt}{space 5}science {c |}{res}     16,936    33.45497    7.496818    18.9077    54.5415
+{txt}
+{com}. 
+. **checking variable and recoding for socioemotional skills
+. codebook X2TCHINT X2TCHEXT X2TCHCON X2TCHPER 
+
+{txt}{hline}
+{res}X2TCHINT{right:X2 TEACHER REPORT INTERN PROB BEHAVIORS}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}double{txt})
+{ralign 22:label}:  {res:_19F}, but {res:19} nonmissing values are not labeled
+
+{col 18}range:  [{res}-9{txt},{res}4{txt}]{col 55}units:  {res}.0001
+{col 10}{txt}unique values:  {res}20{col 51}{txt}missing .:  {res}2,141{txt}/{res}18,174
+
+{txt}{ralign 23: examples:}{col 26}{res}1{col 32}{txt}
+{ralign 23: }{col 26}{res}1.25{col 32}{txt}
+{ralign 23: }{col 26}{res}1.75{col 32}{txt}
+{ralign 23: }{col 26}{res}2.25{col 32}{txt}
+
+{txt}{hline}
+{res}X2TCHEXT{right:X2 TEACHER REPORT EXTERN PROB BEHAVIORS}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}double{txt})
+{ralign 22:label}:  {res:_19F}, but {res:25} nonmissing values are not labeled
+
+{col 18}range:  [{res}-9{txt},{res}4{txt}]{col 55}units:  {res}.01
+{col 10}{txt}unique values:  {res}26{col 51}{txt}missing .:  {res}2,141{txt}/{res}18,174
+
+{txt}{ralign 23: examples:}{col 26}{res}1{col 32}{txt}
+{ralign 23: }{col 26}{res}1.4{col 32}{txt}
+{ralign 23: }{col 26}{res}1.8{col 32}{txt}
+{ralign 23: }{col 26}{res}2.6{col 32}{txt}
+
+{txt}{hline}
+{res}X2TCHCON{right:X2 TEACHER REPORT SELF-CONTROL}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}double{txt})
+{ralign 22:label}:  {res:_19F}, but {res:19} nonmissing values are not labeled
+
+{col 18}range:  [{res}-9{txt},{res}4{txt}]{col 55}units:  {res}.0001
+{col 10}{txt}unique values:  {res}20{col 51}{txt}missing .:  {res}2,141{txt}/{res}18,174
+
+{txt}{ralign 23: examples:}{col 26}{res}2.75{col 32}{txt}
+{ralign 23: }{col 26}{res}3.25{col 32}{txt}
+{ralign 23: }{col 26}{res}3.5{col 32}{txt}
+{ralign 23: }{col 26}{res}4{col 32}{txt}
+
+{txt}{hline}
+{res}X2TCHPER{right:X2 TEACHER REPORT INTERPERSONAL}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}double{txt})
+{ralign 22:label}:  {res:_19F}, but {res:25} nonmissing values are not labeled
+
+{col 18}range:  [{res}-9{txt},{res}4{txt}]{col 55}units:  {res}.01
+{col 10}{txt}unique values:  {res}26{col 51}{txt}missing .:  {res}2,141{txt}/{res}18,174
+
+{txt}{ralign 23: examples:}{col 26}{res}2.6{col 32}{txt}
+{ralign 23: }{col 26}{res}3{col 32}{txt}
+{ralign 23: }{col 26}{res}3.6{col 32}{txt}
+{ralign 23: }{col 26}{res}4{col 32}{txt}
+
+{com}. **all continuous 
+. recode X2TCHINT (-9=.) (-8=.) (-7=.) (-1=.), generate (se1)
+{txt}(168 differences between X2TCHINT and se1)
+
+{com}. recode X2TCHEXT (-9=.) (-8=.) (-7=.) (-1=.), generate (se2)
+{txt}(130 differences between X2TCHEXT and se2)
+
+{com}. recode X2TCHCON (-9=.) (-8=.) (-7=.) (-1=.), generate (se3)
+{txt}(237 differences between X2TCHCON and se3)
+
+{com}. recode X2TCHPER (-9=.) (-8=.) (-7=.) (-1=.), generate (se4)
+{txt}(234 differences between X2TCHPER and se4)
+
+{com}. 
+. sum se1 se2 se3 se4
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}se1 {c |}{res}     15,865    1.509738    .4968733          1          4
+{txt}{space 9}se2 {c |}{res}     15,903    1.637594    .6410364          1          4
+{txt}{space 9}se3 {c |}{res}     15,796    3.177772    .6374566          1          4
+{txt}{space 9}se4 {c |}{res}     15,799    3.133031    .6541315          1          4
+{txt}
+{com}. 
+. **checking variable and recoding for executive functioning skills
+. codebook X2DCCSTOT
+
+{txt}{hline}
+{res}X2DCCSTOT{right:X2 CARD SORT COMBINED SCORE}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:_9F}, but {res:18} nonmissing values are not labeled
+
+{col 18}range:  [{res}-9{txt},{res}18{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}19{col 51}{txt}missing .:  {res}959{txt}/{res}18,174
+
+{txt}{ralign 23: examples:}{col 26}{res}14{col 32}{txt}
+{ralign 23: }{col 26}{res}15{col 32}{txt}
+{ralign 23: }{col 26}{res}16{col 32}{txt}
+{ralign 23: }{col 26}{res}18{col 32}{txt}
+
+{com}. recode X2DCCSTOT (-9=.) (-8=.) (-7=.) (-1=.), generate (child)
+{txt}(66 differences between X2DCCSTOT and child)
+
+{com}. tab child
+
+  {txt}RECODE of {c |}
+  X2DCCSTOT {c |}
+   (X2 CARD {c |}
+       SORT {c |}
+   COMBINED {c |}
+     SCORE) {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}         14        0.08        0.08
+{txt}          2 {c |}{res}         10        0.06        0.14
+{txt}          3 {c |}{res}         20        0.12        0.26
+{txt}          4 {c |}{res}         21        0.12        0.38
+{txt}          5 {c |}{res}         49        0.29        0.66
+{txt}          6 {c |}{res}        522        3.04        3.71
+{txt}          7 {c |}{res}        151        0.88        4.59
+{txt}          8 {c |}{res}        132        0.77        5.36
+{txt}          9 {c |}{res}        197        1.15        6.51
+{txt}         10 {c |}{res}        381        2.22        8.73
+{txt}         11 {c |}{res}         44        0.26        8.99
+{txt}         12 {c |}{res}        149        0.87        9.85
+{txt}         13 {c |}{res}        457        2.66       12.52
+{txt}         14 {c |}{res}      1,514        8.83       21.35
+{txt}         15 {c |}{res}      5,071       29.57       50.92
+{txt}         16 {c |}{res}      2,797       16.31       67.23
+{txt}         17 {c |}{res}      2,904       16.93       84.16
+{txt}         18 {c |}{res}      2,716       15.84      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}     17,149      100.00
+{txt}
+{com}. 
+. **checking var and recoding for covariate 
+. codebook  X_RACETH_R X_CHSEX_R X2INCCAT_I P1CURMAR P2HEALTH X1LESS18 X1OVER18
+
+{txt}{hline}
+{res}X_RACETH_R{right:CHILD RACE PARENT AND SCHL REPORT - REV}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:X12RACTH}
+
+{col 18}range:  [{res}-9{txt},{res}8{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}9{col 51}{txt}missing .:  {res}0{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}        44{col 33}      -9{col 43}{txt}-9: NOT ASCERTAINED
+{col 21}{res}     8,489{col 33}       1{col 43}{txt}1: WHITE, NON-HISPANIC
+{col 21}{res}     2,397{col 33}       2{col 43}{txt}2: BLACK/AFRICAN AMERICAN,
+{col 43}NON-HISPANIC
+{col 21}{res}     4,184{col 33}       3{col 43}{txt}3: HISPANIC, RACE SPECIFIED
+{col 21}{res}       406{col 33}       4{col 43}{txt}4: HISPANIC, NO RACE SPECIFIED
+{col 21}{res}     1,543{col 33}       5{col 43}{txt}5: ASIAN, NON-HISPANIC
+{col 21}{res}       117{col 33}       6{col 43}{txt}6: NATIVE HAWAIIAN/PACIFIC
+{col 43}ISLANDER, NON-HISPANIC
+{col 21}{res}       168{col 33}       7{col 43}{txt}7: AMERICAN INDIAN/ALASKA
+{col 43}NATIVE, NON-HISPANIC
+{col 21}{res}       826{col 33}       8{col 43}{txt}8: TWO OR MORE RACES,
+{col 43}NON-HISPANIC
+
+{txt}{hline}
+{res}X_CHSEX_R{right:CHILD COMPOSITE SEX - REVISED}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:X_CHSEX}
+
+{col 18}range:  [{res}-9{txt},{res}2{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}3{col 51}{txt}missing .:  {res}0{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}        39{col 33}      -9{col 43}{txt}-9: NOT ASCERTAINED
+{col 21}{res}     9,288{col 33}       1{col 43}{txt}1: MALE
+{col 21}{res}     8,847{col 33}       2{col 43}{txt}2: FEMALE
+
+{txt}{hline}
+{res}X2INCCAT_I{right:X2 INCOME CATEGORY (IMPUTED)}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:X2INCATI}
+
+{col 18}range:  [{res}-9{txt},{res}18{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}19{col 51}{txt}missing .:  {res}4,563{txt}/{res}18,174
+
+{txt}{ralign 23: examples:}{col 26}{res}5{col 32}{txt}5: $20,001 TO $25,000
+{ralign 23: }{col 26}{res}12{col 32}{txt}12: $55,001 TO $60,000
+{ralign 23: }{col 26}{res}17{col 32}{txt}17: $100,001 TO $200,000
+{ralign 23: }{col 26}{res}.{col 32}{txt}
+
+{txt}{hline}
+{res}P1CURMAR{right:P1 FSQ200 CURRENT MARITAL STATUS}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:PUF23F}
+
+{col 18}range:  [{res}1{txt},{res}5{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}5{col 51}{txt}missing .:  {res}4,775{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}     9,163{col 33}       1{col 43}{txt}1: MARRIED (1)
+{col 21}{res}       595{col 33}       2{col 43}{txt}2: SEPARATED (2)
+{col 21}{res}       984{col 33}       3{col 43}{txt}3: DIVORCED OR WIDOWED (3, 4)
+{col 21}{res}     2,165{col 33}       4{col 43}{txt}4: NEVER MARRIED (5)
+{col 21}{res}       492{col 33}       5{col 43}{txt}5: CIVIL UNION/DOMESTIC
+{col 43}PARTNERSHIP (6)
+{col 21}{res}     4,775{col 33}       .{col 43}
+
+{txt}{hline}
+{res}P2HEALTH{right:P2 PPQ220 RESPONDENT HEALTH STATUS}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:P2HEALTH}
+
+{col 18}range:  [{res}-9{txt},{res}5{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}9{col 51}{txt}missing .:  {res}4,563{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}       855{col 33}      -9{col 43}{txt}-9: NOT ASCERTAINED
+{col 21}{res}        30{col 33}      -8{col 43}{txt}-8: DON'T KNOW
+{col 21}{res}        29{col 33}      -7{col 43}{txt}-7: REFUSED
+{col 21}{res}       115{col 33}      -1{col 43}{txt}-1: NOT APPLICABLE
+{col 21}{res}     3,620{col 33}       1{col 43}{txt}1: EXCELLENT
+{col 21}{res}     4,529{col 33}       2{col 43}{txt}2: VERY GOOD
+{col 21}{res}     3,211{col 33}       3{col 43}{txt}3: GOOD
+{col 21}{res}     1,071{col 33}       4{col 43}{txt}4: FAIR
+{col 21}{res}       151{col 33}       5{col 43}{txt}5: POOR
+{col 21}{res}     4,563{col 33}       .{col 43}
+
+{txt}{hline}
+{res}X1LESS18{right:X1 NUMBER IN HOUSEHOLD AGED <18}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:_9F}, but {res:11} nonmissing values are not labeled
+
+{col 18}range:  [{res}-9{txt},{res}13{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}12{col 51}{txt}missing .:  {res}4,775{txt}/{res}18,174
+
+{txt}{ralign 23: examples:}{col 26}{res}2{col 32}{txt}
+{ralign 23: }{col 26}{res}2{col 32}{txt}
+{ralign 23: }{col 26}{res}3{col 32}{txt}
+{ralign 23: }{col 26}{res}.{col 32}{txt}
+
+{txt}{hline}
+{res}X1OVER18{right:X1 NUMBER IN HOUSEHOLD AGED 18+}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}long{txt})
+{ralign 22:label}:  {res:_9F}, but {res:7} nonmissing values are not labeled
+
+{col 18}range:  [{res}-9{txt},{res}7{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}8{col 51}{txt}missing .:  {res}4,775{txt}/{res}18,174
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}        45{col 33}      -9{col 43}{txt}-9: NOT ASCERTAINED
+{col 21}{res}     1,930{col 33}       1{col 43}
+{col 21}     9,539{col 33}       2{col 43}
+{col 21}     1,275{col 33}       3{col 43}
+{col 21}       462{col 33}       4{col 43}
+{col 21}       107{col 33}       5{col 43}
+{col 21}        28{col 33}       6{col 43}
+{col 21}        13{col 33}       7{col 43}
+{col 21}     4,775{col 33}       .{col 43}
+{txt}
+{com}. recode X_RACETH_R (-9=.), generate (race)
+{txt}(44 differences between X_RACETH_R and race)
+
+{com}. recode X_CHSEX_R (-9=.) (1=0) (2=1), generate (sex)
+{txt}(18174 differences between X_CHSEX_R and sex)
+
+{com}. recode X2INCCAT_I (-9=.) (-8=.) (-7=.) (-1=.), generate (income)
+{txt}(81 differences between X2INCCAT_I and income)
+
+{com}. clonevar mar = P1CURMAR
+{txt}(4,775 missing values generated)
+
+{com}. recode P2HEALTH (-9=.) (-8=.) (-7=.) (-1=.), generate (health)
+{txt}(1029 differences between P2HEALTH and health)
+
+{com}. recode X1LESS18 (-9=.) (-8=.) (-7=.) (-1=.), generate (under18)
+{txt}(45 differences between X1LESS18 and under18)
+
+{com}. recode X1OVER18 (-9=.) (-8=.) (-7=.) (-1=.), generate (over18)
+{txt}(45 differences between X1OVER18 and over18)
+
+{com}. 
+. **generating composite varibale
+. gen dep = dep1 + dep2 + dep3+ dep4 + dep5 + dep6 + dep7 + dep8 +dep9 + dep10 + dep11 + dep12
+{txt}(5,713 missing values generated)
+
+{com}. tab dep, missing 
+
+        {txt}dep {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+         12 {c |}{res}      2,708       14.90       14.90
+{txt}         13 {c |}{res}      1,537        8.46       23.36
+{txt}         14 {c |}{res}      1,363        7.50       30.86
+{txt}         15 {c |}{res}      1,342        7.38       38.24
+{txt}         16 {c |}{res}      1,125        6.19       44.43
+{txt}         17 {c |}{res}        802        4.41       48.84
+{txt}         18 {c |}{res}        719        3.96       52.80
+{txt}         19 {c |}{res}        510        2.81       55.61
+{txt}         20 {c |}{res}        422        2.32       57.93
+{txt}         21 {c |}{res}        363        2.00       59.93
+{txt}         22 {c |}{res}        285        1.57       61.49
+{txt}         23 {c |}{res}        250        1.38       62.87
+{txt}         24 {c |}{res}        176        0.97       63.84
+{txt}         25 {c |}{res}        138        0.76       64.60
+{txt}         26 {c |}{res}        121        0.67       65.26
+{txt}         27 {c |}{res}         95        0.52       65.79
+{txt}         28 {c |}{res}         86        0.47       66.26
+{txt}         29 {c |}{res}         55        0.30       66.56
+{txt}         30 {c |}{res}         49        0.27       66.83
+{txt}         31 {c |}{res}         55        0.30       67.13
+{txt}         32 {c |}{res}         35        0.19       67.33
+{txt}         33 {c |}{res}         45        0.25       67.57
+{txt}         34 {c |}{res}         22        0.12       67.70
+{txt}         35 {c |}{res}         24        0.13       67.83
+{txt}         36 {c |}{res}         22        0.12       67.95
+{txt}         37 {c |}{res}         20        0.11       68.06
+{txt}         38 {c |}{res}         17        0.09       68.15
+{txt}         39 {c |}{res}         15        0.08       68.23
+{txt}         40 {c |}{res}         18        0.10       68.33
+{txt}         41 {c |}{res}          9        0.05       68.38
+{txt}         42 {c |}{res}          9        0.05       68.43
+{txt}         43 {c |}{res}          3        0.02       68.45
+{txt}         44 {c |}{res}          9        0.05       68.50
+{txt}         45 {c |}{res}          5        0.03       68.53
+{txt}         46 {c |}{res}          4        0.02       68.55
+{txt}         48 {c |}{res}          3        0.02       68.56
+{txt}          . {c |}{res}      5,713       31.44      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}     18,174      100.00
+{txt}
+{com}. sum dep
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}dep {c |}{res}     12,461    16.37926    5.005612         12         48
+{txt}
+{com}. 
+. gen ach = reading + math + science 
+{txt}(1,240 missing values generated)
+
+{com}. sum ach
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}ach {c |}{res}     16,934    149.1365    29.73221    62.3247   268.6308
+{txt}
+{com}. 
+. gen se = se1 + se2 + se3 + se4 
+{txt}(2,657 missing values generated)
+
+{com}. tab se, missing 
+
+         {txt}se {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+        4.6 {c |}{res}          1        0.01        0.01
+{txt}       5.25 {c |}{res}          1        0.01        0.01
+{txt}        5.7 {c |}{res}          1        0.01        0.02
+{txt}     5.7833 {c |}{res}          1        0.01        0.02
+{txt}       5.95 {c |}{res}          1        0.01        0.03
+{txt}          6 {c |}{res}          3        0.02        0.04
+{txt}        6.2 {c |}{res}          1        0.01        0.05
+{txt}        6.4 {c |}{res}          2        0.01        0.06
+{txt}       6.45 {c |}{res}          1        0.01        0.07
+{txt}        6.6 {c |}{res}          1        0.01        0.07
+{txt}       6.65 {c |}{res}          4        0.02        0.09
+{txt}     6.6667 {c |}{res}          1        0.01        0.10
+{txt}     6.6667 {c |}{res}          1        0.01        0.10
+{txt}        6.7 {c |}{res}          3        0.02        0.12
+{txt}     6.7167 {c |}{res}          1        0.01        0.13
+{txt}     6.7333 {c |}{res}          1        0.01        0.13
+{txt}       6.75 {c |}{res}          4        0.02        0.15
+{txt}        6.8 {c |}{res}          9        0.05        0.20
+{txt}       6.85 {c |}{res}          3        0.02        0.22
+{txt}     6.8833 {c |}{res}          1        0.01        0.23
+{txt}        6.9 {c |}{res}          6        0.03        0.26
+{txt}     6.9333 {c |}{res}          1        0.01        0.26
+{txt}       6.95 {c |}{res}          3        0.02        0.28
+{txt}     6.9833 {c |}{res}          1        0.01        0.29
+{txt}          7 {c |}{res}         18        0.10        0.39
+{txt}       7.05 {c |}{res}          8        0.04        0.43
+{txt}        7.1 {c |}{res}         10        0.06        0.48
+{txt}        7.1 {c |}{res}          6        0.03        0.52
+{txt}     7.1333 {c |}{res}          1        0.01        0.52
+{txt}       7.15 {c |}{res}          8        0.04        0.57
+{txt}     7.1667 {c |}{res}          2        0.01        0.58
+{txt}     7.1833 {c |}{res}          2        0.01        0.59
+{txt}        7.2 {c |}{res}         19        0.10        0.69
+{txt}       7.25 {c |}{res}         30        0.17        0.86
+{txt}     7.2667 {c |}{res}          2        0.01        0.87
+{txt}        7.3 {c |}{res}         21        0.12        0.98
+{txt}     7.3333 {c |}{res}          1        0.01        0.99
+{txt}       7.35 {c |}{res}         15        0.08        1.07
+{txt}       7.35 {c |}{res}          6        0.03        1.11
+{txt}        7.4 {c |}{res}          2        0.01        1.12
+{txt}        7.4 {c |}{res}         19        0.10        1.22
+{txt}     7.4167 {c |}{res}          1        0.01        1.23
+{txt}     7.4333 {c |}{res}          1        0.01        1.23
+{txt}       7.45 {c |}{res}         39        0.21        1.45
+{txt}     7.4667 {c |}{res}          1        0.01        1.45
+{txt}     7.4667 {c |}{res}          1        0.01        1.46
+{txt}        7.5 {c |}{res}         50        0.28        1.73
+{txt}     7.5167 {c |}{res}          3        0.02        1.75
+{txt}     7.5333 {c |}{res}          2        0.01        1.76
+{txt}     7.5333 {c |}{res}          1        0.01        1.77
+{txt}       7.55 {c |}{res}         28        0.15        1.92
+{txt}     7.5667 {c |}{res}          4        0.02        1.94
+{txt}     7.5833 {c |}{res}          1        0.01        1.95
+{txt}     7.5833 {c |}{res}          1        0.01        1.95
+{txt}        7.6 {c |}{res}         24        0.13        2.09
+{txt}        7.6 {c |}{res}         10        0.06        2.14
+{txt}     7.6333 {c |}{res}          2        0.01        2.15
+{txt}     7.6333 {c |}{res}          1        0.01        2.16
+{txt}       7.65 {c |}{res}          7        0.04        2.20
+{txt}       7.65 {c |}{res}         35        0.19        2.39
+{txt}     7.6667 {c |}{res}          8        0.04        2.43
+{txt}     7.6833 {c |}{res}          1        0.01        2.44
+{txt}        7.7 {c |}{res}         69        0.38        2.82
+{txt}     7.7167 {c |}{res}          2        0.01        2.83
+{txt}     7.7167 {c |}{res}          1        0.01        2.83
+{txt}     7.7333 {c |}{res}          2        0.01        2.84
+{txt}       7.75 {c |}{res}         50        0.28        3.12
+{txt}     7.7667 {c |}{res}          1        0.01        3.13
+{txt}     7.7833 {c |}{res}          1        0.01        3.13
+{txt}        7.8 {c |}{res}         56        0.31        3.44
+{txt}     7.8167 {c |}{res}          1        0.01        3.44
+{txt}     7.8333 {c |}{res}          1        0.01        3.45
+{txt}       7.85 {c |}{res}         34        0.19        3.64
+{txt}       7.85 {c |}{res}         22        0.12        3.76
+{txt}     7.8667 {c |}{res}          1        0.01        3.76
+{txt}     7.8667 {c |}{res}          3        0.02        3.78
+{txt}     7.8833 {c |}{res}          2        0.01        3.79
+{txt}        7.9 {c |}{res}         18        0.10        3.89
+{txt}        7.9 {c |}{res}         54        0.30        4.19
+{txt}     7.9167 {c |}{res}          3        0.02        4.20
+{txt}     7.9333 {c |}{res}          9        0.05        4.25
+{txt}       7.95 {c |}{res}         88        0.48        4.74
+{txt}     7.9667 {c |}{res}          2        0.01        4.75
+{txt}     7.9667 {c |}{res}          1        0.01        4.75
+{txt}     7.9833 {c |}{res}          2        0.01        4.77
+{txt}          8 {c |}{res}        109        0.60        5.36
+{txt}     8.0167 {c |}{res}          3        0.02        5.38
+{txt}     8.0333 {c |}{res}          3        0.02        5.40
+{txt}       8.05 {c |}{res}         95        0.52        5.92
+{txt}     8.0667 {c |}{res}         10        0.06        5.98
+{txt}     8.0833 {c |}{res}          3        0.02        5.99
+{txt}        8.1 {c |}{res}         99        0.54        6.54
+{txt}     8.1167 {c |}{res}          5        0.03        6.56
+{txt}     8.1333 {c |}{res}         14        0.08        6.64
+{txt}       8.15 {c |}{res}        109        0.60        7.24
+{txt}   8.166699 {c |}{res}          1        0.01        7.25
+{txt}     8.1667 {c |}{res}          3        0.02        7.26
+{txt}     8.1833 {c |}{res}          5        0.03        7.29
+{txt}        8.2 {c |}{res}        134        0.74        8.03
+{txt}     8.2167 {c |}{res}          4        0.02        8.05
+{txt}     8.2333 {c |}{res}          2        0.01        8.06
+{txt}       8.25 {c |}{res}        140        0.77        8.83
+{txt}     8.2667 {c |}{res}         12        0.07        8.90
+{txt}     8.2833 {c |}{res}          1        0.01        8.90
+{txt}        8.3 {c |}{res}        120        0.66        9.56
+{txt}     8.3167 {c |}{res}          3        0.02        9.58
+{txt}     8.3333 {c |}{res}         10        0.06        9.63
+{txt}   8.333301 {c |}{res}          1        0.01        9.64
+{txt}       8.35 {c |}{res}        113        0.62       10.26
+{txt}     8.3667 {c |}{res}          1        0.01       10.27
+{txt}     8.3833 {c |}{res}          7        0.04       10.31
+{txt}        8.4 {c |}{res}        190        1.05       11.35
+{txt}     8.4167 {c |}{res}          4        0.02       11.37
+{txt}     8.4333 {c |}{res}          3        0.02       11.39
+{txt}       8.45 {c |}{res}        197        1.08       12.47
+{txt}     8.4667 {c |}{res}          6        0.03       12.51
+{txt}     8.4833 {c |}{res}          5        0.03       12.53
+{txt}        8.5 {c |}{res}        169        0.93       13.46
+{txt}     8.5167 {c |}{res}          9        0.05       13.51
+{txt}     8.5333 {c |}{res}          9        0.05       13.56
+{txt}     8.5334 {c |}{res}          1        0.01       13.57
+{txt}       8.55 {c |}{res}        153        0.84       14.41
+{txt}     8.5667 {c |}{res}          4        0.02       14.43
+{txt}     8.5833 {c |}{res}         17        0.09       14.53
+{txt}   8.583301 {c |}{res}          1        0.01       14.53
+{txt}        8.6 {c |}{res}        226        1.24       15.78
+{txt}     8.6333 {c |}{res}          3        0.02       15.79
+{txt}       8.65 {c |}{res}        226        1.24       17.04
+{txt}     8.6667 {c |}{res}         10        0.06       17.09
+{txt}     8.6833 {c |}{res}          4        0.02       17.11
+{txt}        8.7 {c |}{res}        216        1.19       18.30
+{txt}     8.7167 {c |}{res}          9        0.05       18.35
+{txt}     8.7333 {c |}{res}          7        0.04       18.39
+{txt}     8.7334 {c |}{res}          1        0.01       18.39
+{txt}       8.75 {c |}{res}        172        0.95       19.34
+{txt}     8.7667 {c |}{res}          2        0.01       19.35
+{txt}     8.7833 {c |}{res}         11        0.06       19.41
+{txt}        8.8 {c |}{res}        218        1.20       20.61
+{txt}     8.8167 {c |}{res}          2        0.01       20.62
+{txt}     8.8333 {c |}{res}          5        0.03       20.65
+{txt}   8.833301 {c |}{res}          1        0.01       20.66
+{txt}     8.8334 {c |}{res}          1        0.01       20.66
+{txt}       8.85 {c |}{res}        263        1.45       22.11
+{txt}     8.8667 {c |}{res}         13        0.07       22.18
+{txt}     8.8833 {c |}{res}          3        0.02       22.20
+{txt}        8.9 {c |}{res}        234        1.29       23.48
+{txt}     8.9167 {c |}{res}         10        0.06       23.54
+{txt}     8.9333 {c |}{res}         13        0.07       23.61
+{txt}       8.95 {c |}{res}        195        1.07       24.68
+{txt}     8.9667 {c |}{res}          4        0.02       24.71
+{txt}     8.9833 {c |}{res}          6        0.03       24.74
+{txt}          9 {c |}{res}        216        1.19       25.93
+{txt}     9.0167 {c |}{res}          2        0.01       25.94
+{txt}     9.0333 {c |}{res}          5        0.03       25.97
+{txt}       9.05 {c |}{res}        299        1.65       27.61
+{txt}     9.0667 {c |}{res}          7        0.04       27.65
+{txt}     9.0833 {c |}{res}          5        0.03       27.68
+{txt}        9.1 {c |}{res}        312        1.72       29.39
+{txt}     9.1167 {c |}{res}         11        0.06       29.45
+{txt}     9.1333 {c |}{res}         15        0.08       29.54
+{txt}       9.15 {c |}{res}        255        1.40       30.94
+{txt}   9.166699 {c |}{res}          1        0.01       30.95
+{txt}     9.1667 {c |}{res}         14        0.08       31.02
+{txt}     9.1833 {c |}{res}         14        0.08       31.10
+{txt}        9.2 {c |}{res}        199        1.09       32.19
+{txt}     9.2167 {c |}{res}          6        0.03       32.23
+{txt}     9.2333 {c |}{res}          7        0.04       32.27
+{txt}       9.25 {c |}{res}        279        1.54       33.80
+{txt}     9.2667 {c |}{res}         11        0.06       33.86
+{txt}     9.2833 {c |}{res}          5        0.03       33.89
+{txt}        9.3 {c |}{res}        308        1.69       35.58
+{txt}     9.3167 {c |}{res}          7        0.04       35.62
+{txt}     9.3333 {c |}{res}         11        0.06       35.68
+{txt}   9.333301 {c |}{res}          1        0.01       35.69
+{txt}       9.35 {c |}{res}        316        1.74       37.43
+{txt}   9.366699 {c |}{res}          1        0.01       37.43
+{txt}     9.3667 {c |}{res}          5        0.03       37.46
+{txt}     9.3833 {c |}{res}         16        0.09       37.55
+{txt}        9.4 {c |}{res}        263        1.45       39.00
+{txt}     9.4166 {c |}{res}          1        0.01       39.00
+{txt}     9.4167 {c |}{res}          9        0.05       39.05
+{txt}     9.4333 {c |}{res}          6        0.03       39.08
+{txt}       9.45 {c |}{res}        236        1.30       40.38
+{txt}     9.4667 {c |}{res}         10        0.06       40.44
+{txt}     9.4833 {c |}{res}          8        0.04       40.48
+{txt}        9.5 {c |}{res}        319        1.76       42.24
+{txt}     9.5167 {c |}{res}         19        0.10       42.34
+{txt}     9.5333 {c |}{res}          5        0.03       42.37
+{txt}       9.55 {c |}{res}        354        1.95       44.32
+{txt}     9.5667 {c |}{res}          5        0.03       44.34
+{txt}     9.5833 {c |}{res}         11        0.06       44.40
+{txt}   9.583301 {c |}{res}          3        0.02       44.42
+{txt}   9.599999 {c |}{res}          1        0.01       44.43
+{txt}        9.6 {c |}{res}        311        1.71       46.14
+{txt}     9.6167 {c |}{res}          6        0.03       46.17
+{txt}     9.6333 {c |}{res}          7        0.04       46.21
+{txt}     9.6334 {c |}{res}          1        0.01       46.21
+{txt}       9.65 {c |}{res}        229        1.26       47.47
+{txt}   9.666699 {c |}{res}          1        0.01       47.48
+{txt}     9.6667 {c |}{res}         13        0.07       47.55
+{txt}     9.6833 {c |}{res}         10        0.06       47.61
+{txt}        9.7 {c |}{res}        256        1.41       49.02
+{txt}     9.7167 {c |}{res}         16        0.09       49.10
+{txt}     9.7333 {c |}{res}          6        0.03       49.14
+{txt}       9.75 {c |}{res}        384        2.11       51.25
+{txt}     9.7667 {c |}{res}          4        0.02       51.27
+{txt}     9.7833 {c |}{res}          7        0.04       51.31
+{txt}        9.8 {c |}{res}        401        2.21       53.52
+{txt}     9.8167 {c |}{res}          2        0.01       53.53
+{txt}     9.8333 {c |}{res}          4        0.02       53.55
+{txt}       9.85 {c |}{res}        211        1.16       54.71
+{txt}     9.8667 {c |}{res}          9        0.05       54.76
+{txt}     9.8833 {c |}{res}          3        0.02       54.78
+{txt}        9.9 {c |}{res}        216        1.19       55.96
+{txt}   9.916699 {c |}{res}          2        0.01       55.98
+{txt}     9.9167 {c |}{res}         15        0.08       56.06
+{txt}     9.9333 {c |}{res}         10        0.06       56.11
+{txt}       9.95 {c |}{res}        292        1.61       57.72
+{txt}     9.9667 {c |}{res}          5        0.03       57.75
+{txt}     9.9833 {c |}{res}          5        0.03       57.77
+{txt}         10 {c |}{res}        837        4.61       62.38
+{txt}    10.0167 {c |}{res}          5        0.03       62.41
+{txt}    10.0333 {c |}{res}          1        0.01       62.41
+{txt}      10.05 {c |}{res}        279        1.54       63.95
+{txt}    10.0667 {c |}{res}          8        0.04       63.99
+{txt}    10.0833 {c |}{res}          2        0.01       64.00
+{txt}       10.1 {c |}{res}        176        0.97       64.97
+{txt}    10.1167 {c |}{res}          7        0.04       65.01
+{txt}    10.1333 {c |}{res}          4        0.02       65.03
+{txt}      10.15 {c |}{res}        196        1.08       66.11
+{txt}    10.1667 {c |}{res}          5        0.03       66.14
+{txt}    10.1833 {c |}{res}          3        0.02       66.15
+{txt}       10.2 {c |}{res}        343        1.89       68.04
+{txt}    10.2167 {c |}{res}          6        0.03       68.08
+{txt}    10.2333 {c |}{res}          4        0.02       68.10
+{txt}      10.25 {c |}{res}        632        3.48       71.57
+{txt}    10.2667 {c |}{res}          7        0.04       71.61
+{txt}    10.2833 {c |}{res}          3        0.02       71.63
+{txt}       10.3 {c |}{res}        165        0.91       72.54
+{txt}    10.3167 {c |}{res}          9        0.05       72.59
+{txt}    10.3333 {c |}{res}          6        0.03       72.62
+{txt}    10.3334 {c |}{res}          1        0.01       72.63
+{txt}      10.35 {c |}{res}        122        0.67       73.30
+{txt}    10.3667 {c |}{res}          2        0.01       73.31
+{txt}    10.3833 {c |}{res}          1        0.01       73.31
+{txt}       10.4 {c |}{res}        173        0.95       74.27
+{txt}    10.4167 {c |}{res}          1        0.01       74.27
+{txt}    10.4167 {c |}{res}          4        0.02       74.29
+{txt}    10.4333 {c |}{res}          4        0.02       74.31
+{txt}      10.45 {c |}{res}        235        1.29       75.61
+{txt}    10.4667 {c |}{res}          4        0.02       75.63
+{txt}    10.4833 {c |}{res}          2        0.01       75.64
+{txt}       10.5 {c |}{res}        232        1.28       76.92
+{txt}    10.5167 {c |}{res}          3        0.02       76.93
+{txt}    10.5333 {c |}{res}          2        0.01       76.95
+{txt}      10.55 {c |}{res}        140        0.77       77.72
+{txt}    10.5667 {c |}{res}          5        0.03       77.74
+{txt}    10.5833 {c |}{res}          1        0.01       77.75
+{txt}       10.6 {c |}{res}        130        0.72       78.46
+{txt}      10.65 {c |}{res}        138        0.76       79.22
+{txt}    10.6667 {c |}{res}          1        0.01       79.23
+{txt}    10.6667 {c |}{res}          3        0.02       79.25
+{txt}    10.6833 {c |}{res}          1        0.01       79.25
+{txt}       10.7 {c |}{res}        105        0.58       79.83
+{txt}    10.7167 {c |}{res}          2        0.01       79.84
+{txt}    10.7333 {c |}{res}          2        0.01       79.85
+{txt}      10.75 {c |}{res}        132        0.73       80.58
+{txt}       10.8 {c |}{res}         88        0.48       81.06
+{txt}    10.8167 {c |}{res}          1        0.01       81.07
+{txt}      10.85 {c |}{res}         79        0.43       81.50
+{txt}    10.8667 {c |}{res}          1        0.01       81.51
+{txt}    10.8833 {c |}{res}          2        0.01       81.52
+{txt}       10.9 {c |}{res}         81        0.45       81.96
+{txt}    10.9167 {c |}{res}          2        0.01       81.97
+{txt}      10.95 {c |}{res}         67        0.37       82.34
+{txt}    10.9833 {c |}{res}          1        0.01       82.35
+{txt}         11 {c |}{res}         74        0.41       82.76
+{txt}    11.0333 {c |}{res}          1        0.01       82.76
+{txt}      11.05 {c |}{res}         53        0.29       83.05
+{txt}    11.0667 {c |}{res}          1        0.01       83.06
+{txt}       11.1 {c |}{res}         48        0.26       83.32
+{txt}    11.1167 {c |}{res}          1        0.01       83.33
+{txt}    11.1333 {c |}{res}          1        0.01       83.33
+{txt}    11.1334 {c |}{res}          1        0.01       83.34
+{txt}      11.15 {c |}{res}         37        0.20       83.54
+{txt}       11.2 {c |}{res}         27        0.15       83.69
+{txt}      11.25 {c |}{res}         35        0.19       83.88
+{txt}    11.2667 {c |}{res}          2        0.01       83.89
+{txt}       11.3 {c |}{res}         30        0.17       84.06
+{txt}    11.3167 {c |}{res}          3        0.02       84.08
+{txt}      11.35 {c |}{res}         20        0.11       84.19
+{txt}       11.4 {c |}{res}         30        0.17       84.35
+{txt}    11.4167 {c |}{res}          2        0.01       84.36
+{txt}    11.4167 {c |}{res}          1        0.01       84.37
+{txt}      11.45 {c |}{res}         17        0.09       84.46
+{txt}    11.4667 {c |}{res}          1        0.01       84.47
+{txt}       11.5 {c |}{res}         24        0.13       84.60
+{txt}    11.5334 {c |}{res}          1        0.01       84.60
+{txt}      11.55 {c |}{res}         17        0.09       84.70
+{txt}       11.6 {c |}{res}         13        0.07       84.77
+{txt}      11.65 {c |}{res}          9        0.05       84.82
+{txt}       11.7 {c |}{res}         10        0.06       84.87
+{txt}      11.75 {c |}{res}         12        0.07       84.94
+{txt}       11.8 {c |}{res}          9        0.05       84.99
+{txt}    11.8167 {c |}{res}          1        0.01       85.00
+{txt}      11.85 {c |}{res}          5        0.03       85.02
+{txt}       11.9 {c |}{res}          3        0.02       85.04
+{txt}    11.9167 {c |}{res}          1        0.01       85.04
+{txt}      11.95 {c |}{res}          2        0.01       85.06
+{txt}    11.9667 {c |}{res}          1        0.01       85.06
+{txt}         12 {c |}{res}         16        0.09       85.15
+{txt}      12.05 {c |}{res}          4        0.02       85.17
+{txt}       12.1 {c |}{res}          2        0.01       85.18
+{txt}      12.15 {c |}{res}          3        0.02       85.20
+{txt}       12.2 {c |}{res}          3        0.02       85.22
+{txt}    12.2333 {c |}{res}          1        0.01       85.22
+{txt}      12.25 {c |}{res}          4        0.02       85.24
+{txt}       12.3 {c |}{res}          1        0.01       85.25
+{txt}      12.35 {c |}{res}          1        0.01       85.25
+{txt}       12.4 {c |}{res}          3        0.02       85.27
+{txt}      12.45 {c |}{res}          2        0.01       85.28
+{txt}       12.5 {c |}{res}          1        0.01       85.29
+{txt}      12.55 {c |}{res}          1        0.01       85.29
+{txt}       12.6 {c |}{res}          2        0.01       85.30
+{txt}      12.65 {c |}{res}          2        0.01       85.31
+{txt}       12.7 {c |}{res}          2        0.01       85.33
+{txt}       12.8 {c |}{res}          2        0.01       85.34
+{txt}      12.95 {c |}{res}          2        0.01       85.35
+{txt}       13.4 {c |}{res}          1        0.01       85.35
+{txt}       13.6 {c |}{res}          1        0.01       85.36
+{txt}       13.7 {c |}{res}          1        0.01       85.36
+{txt}      13.75 {c |}{res}          1        0.01       85.37
+{txt}       14.3 {c |}{res}          2        0.01       85.38
+{txt}          . {c |}{res}      2,657       14.62      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}     18,174      100.00
+{txt}
+{com}. sum se
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 10}se {c |}{res}     15,517    9.465379    .9061259        4.6       14.3
+{txt}
+{com}. 
+. sum child
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 7}child {c |}{res}     17,149    15.14485    2.796206          0         18
+{txt}
+{com}. tab child, missing
+
+  {txt}RECODE of {c |}
+  X2DCCSTOT {c |}
+   (X2 CARD {c |}
+       SORT {c |}
+   COMBINED {c |}
+     SCORE) {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}         14        0.08        0.08
+{txt}          2 {c |}{res}         10        0.06        0.13
+{txt}          3 {c |}{res}         20        0.11        0.24
+{txt}          4 {c |}{res}         21        0.12        0.36
+{txt}          5 {c |}{res}         49        0.27        0.63
+{txt}          6 {c |}{res}        522        2.87        3.50
+{txt}          7 {c |}{res}        151        0.83        4.33
+{txt}          8 {c |}{res}        132        0.73        5.06
+{txt}          9 {c |}{res}        197        1.08        6.14
+{txt}         10 {c |}{res}        381        2.10        8.24
+{txt}         11 {c |}{res}         44        0.24        8.48
+{txt}         12 {c |}{res}        149        0.82        9.30
+{txt}         13 {c |}{res}        457        2.51       11.81
+{txt}         14 {c |}{res}      1,514        8.33       20.14
+{txt}         15 {c |}{res}      5,071       27.90       48.05
+{txt}         16 {c |}{res}      2,797       15.39       63.44
+{txt}         17 {c |}{res}      2,904       15.98       79.42
+{txt}         18 {c |}{res}      2,716       14.94       94.36
+{txt}          . {c |}{res}      1,025        5.64      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}     18,174      100.00
+{txt}
+{com}. 
+. corr dep ach se child 
+{txt}(obs=10,811)
+
+             {c |}      dep      ach       se    child
+{hline 13}{c +}{hline 36}
+         dep {c |}{res}   1.0000
+         {txt}ach {c |}{res}  -0.1081   1.0000
+          {txt}se {c |}{res}   0.0165   0.1138   1.0000
+       {txt}child {c |}{res}  -0.0569   0.3440   0.0620   1.0000
+
+{txt}
+{com}. 
+. **imputation started 
+. mi set flong
+{txt}
+{com}. browse _mi_m _mi_id
+{txt}
+{com}. 
+. misstable sum, gen(m_)
+{txt}{col 64}Obs<.
+{col 49}{c TLC}{hline 30}
+{col 16}{c |}{col 49}{c |} Unique
+{col 7}Variable {c |}{col 22}Obs=.{col 32}Obs>.{col 42}Obs<.{col 49}{c |} values{col 65}Min{col 77}Max
+  {hline 13}{c +}{hline 32}{c +}{hline 30}
+     X2RSCALK4 {c |}{res}       959{txt}{space 10}{res}    17,215{txt}  {c |}   >500         -9    125.0272
+     X2MSCALK4 {c |}{res}       959{txt}{space 10}{res}    17,215{txt}  {c |}   >500         -9     98.2882
+     X2SSCALK4 {c |}{res}       959{txt}{space 10}{res}    17,215{txt}  {c |}   >500         -9     54.5415
+     X2DCCSTOT {c |}{res}       959{txt}{space 10}{res}    17,215{txt}  {c |}     19         -9          18
+      X2TCHCON {c |}{res}     2,141{txt}{space 10}{res}    16,033{txt}  {c |}     20         -9           4
+      X2TCHPER {c |}{res}     2,141{txt}{space 10}{res}    16,033{txt}  {c |}     26         -9           4
+      X2TCHEXT {c |}{res}     2,141{txt}{space 10}{res}    16,033{txt}  {c |}     26         -9           4
+      X2TCHINT {c |}{res}     2,141{txt}{space 10}{res}    16,033{txt}  {c |}     20         -9           4
+      X1LESS18 {c |}{res}     4,775{txt}{space 10}{res}    13,399{txt}  {c |}     12         -9          13
+      X1OVER18 {c |}{res}     4,775{txt}{space 10}{res}    13,399{txt}  {c |}      8         -9           7
+    X2INCCAT_I {c |}{res}     4,563{txt}{space 10}{res}    13,611{txt}  {c |}     19         -9          18
+      P1CURMAR {c |}{res}     4,775{txt}{space 10}{res}    13,399{txt}  {c |}      5          1           5
+      P2BOTHER {c |}{res}     4,563{txt}{space 10}{res}    13,611{txt}  {c |}      8         -9           4
+      P2APPETI {c |}{res}     4,563{txt}{space 10}{res}    13,611{txt}  {c |}      8         -9           4
+        P2BLUE {c |}{res}     4,563{txt}{space 10}{res}    13,611{txt}  {c |}      8         -9           4
+      P2KPMIND {c |}{res}     4,563{txt}{space 10}{res}    13,611{txt}  {c |}      8         -9           4
+      P2DEPRES {c |}{res}     4,563{txt}{space 10}{res}    13,611{txt}  {c |}      8         -9           4
+      P2EFFORT {c |}{res}     4,563{txt}{space 10}{res}    13,611{txt}  {c |}      8         -9           4
+      P2FEARFL {c |}{res}     4,563{txt}{space 10}{res}    13,611{txt}  {c |}      8         -9           4
+      P2RESTLS {c |}{res}     4,563{txt}{space 10}{res}    13,611{txt}  {c |}      8         -9           4
+      P2TALKLS {c |}{res}     4,563{txt}{space 10}{res}    13,611{txt}  {c |}      8         -9           4
+      P2LONELY {c |}{res}     4,563{txt}{space 10}{res}    13,611{txt}  {c |}      8         -9           4
+         P2SAD {c |}{res}     4,563{txt}{space 10}{res}    13,611{txt}  {c |}      8         -9           4
+       P2NOTGO {c |}{res}     4,563{txt}{space 10}{res}    13,611{txt}  {c |}      8         -9           4
+      P2HEALTH {c |}{res}     4,563{txt}{space 10}{res}    13,611{txt}  {c |}      9         -9           5
+          dep1 {c |}{res}     5,639{txt}{space 10}{res}    12,535{txt}  {c |}      4          1           4
+          dep2 {c |}{res}     5,636{txt}{space 10}{res}    12,538{txt}  {c |}      4          1           4
+          dep3 {c |}{res}     5,651{txt}{space 10}{res}    12,523{txt}  {c |}      4          1           4
+          dep4 {c |}{res}     5,639{txt}{space 10}{res}    12,535{txt}  {c |}      4          1           4
+          dep5 {c |}{res}     5,643{txt}{space 10}{res}    12,531{txt}  {c |}      4          1           4
+          dep6 {c |}{res}     5,661{txt}{space 10}{res}    12,513{txt}  {c |}      4          1           4
+          dep7 {c |}{res}     5,641{txt}{space 10}{res}    12,533{txt}  {c |}      4          1           4
+          dep8 {c |}{res}     5,645{txt}{space 10}{res}    12,529{txt}  {c |}      4          1           4
+          dep9 {c |}{res}     5,643{txt}{space 10}{res}    12,531{txt}  {c |}      4          1           4
+         dep10 {c |}{res}     5,647{txt}{space 10}{res}    12,527{txt}  {c |}      4          1           4
+         dep11 {c |}{res}     5,647{txt}{space 10}{res}    12,527{txt}  {c |}      4          1           4
+         dep12 {c |}{res}     5,653{txt}{space 10}{res}    12,521{txt}  {c |}      4          1           4
+       reading {c |}{res}       988{txt}{space 10}{res}    17,186{txt}  {c |}   >500    31.6503    125.0272
+          math {c |}{res}     1,031{txt}{space 10}{res}    17,143{txt}  {c |}   >500     9.7646     98.2882
+       science {c |}{res}     1,238{txt}{space 10}{res}    16,936{txt}  {c |}   >500    18.9077     54.5415
+           se1 {c |}{res}     2,309{txt}{space 10}{res}    15,865{txt}  {c |}     19          1           4
+           se2 {c |}{res}     2,271{txt}{space 10}{res}    15,903{txt}  {c |}     25          1           4
+           se3 {c |}{res}     2,378{txt}{space 10}{res}    15,796{txt}  {c |}     19          1           4
+           se4 {c |}{res}     2,375{txt}{space 10}{res}    15,799{txt}  {c |}     25          1           4
+         child {c |}{res}     1,025{txt}{space 10}{res}    17,149{txt}  {c |}     18          0          18
+          race {c |}{res}        44{txt}{space 10}{res}    18,130{txt}  {c |}      8          1           8
+           sex {c |}{res}        39{txt}{space 10}{res}    18,135{txt}  {c |}      2          0           1
+        income {c |}{res}     4,644{txt}{space 10}{res}    13,530{txt}  {c |}     18          1          18
+           mar {c |}{res}     4,775{txt}{space 10}{res}    13,399{txt}  {c |}      5          1           5
+        health {c |}{res}     5,592{txt}{space 10}{res}    12,582{txt}  {c |}      5          1           5
+       under18 {c |}{res}     4,820{txt}{space 10}{res}    13,354{txt}  {c |}     11          1          13
+        over18 {c |}{res}     4,820{txt}{space 10}{res}    13,354{txt}  {c |}      7          1           7
+           dep {c |}{res}     5,713{txt}{space 10}{res}    12,461{txt}  {c |}     36         12          48
+           ach {c |}{res}     1,240{txt}{space 10}{res}    16,934{txt}  {c |}   >500    62.3247    268.6308
+            se {c |}{res}     2,657{txt}{space 10}{res}    15,517{txt}  {c |}    333        4.6        14.3
+  {hline 13}{c BT}{hline 32}{c BT}{hline 30}
+
+{com}. 
+. mcartest dep child se ach
+{res}{txt}{p 0 6}note: 555 {txt}observations {txt}omitted from EM estimation because of all {txt}imputation variables missing{p_end}
+{res}
+{txt}Little's MCAR test
+
+Number of obs       = {res}17619
+{txt}Chi-square distance = {res}695.6862    
+{txt}Degrees of freedom  = {res}20
+{txt}Prob > chi-square   = {res}0.0000
+{txt}
+{com}. 
+. mi misstable patterns dep child se ach
+{res}
+   {txt}Missing-value patterns
+     (1 means complete)
+
+{res}{txt}{space 2}            {c |}   Pattern
+{space 2}  Percent   {c |}  1  2  3  4
+{space 2}{hline 12}{c +}{hline 13}
+{space 2} {res:    59}%    {c |}  1  1  1  1
+{space 2}{space 12}{c |}
+{space 2} {res:    24}     {c |}  1  1  1  0
+{space 2} {res:     6}     {c |}  1  1  0  1
+{space 2} {res:     3}     {c |}  1  1  0  0
+{space 2} {res:     3}     {c |}  0  0  0  0
+{space 2} {res:     2}     {c |}  0  0  0  1
+{space 2}     <1     {c |}  1  0  1  1
+{space 2}     <1     {c |}  0  0  1  1
+{space 2}     <1     {c |}  0  0  1  0
+{space 2}     <1     {c |}  1  0  1  0
+{space 2}     <1     {c |}  1  0  0  0
+{space 2}     <1     {c |}  1  0  0  1
+{space 2}{hline 12}{c +}{hline 13}
+{space 2}    {res:100}%    {c |}
+
+{p 2 16 2}
+Variables are
+{bind: (1) {res:child}}
+{bind: (2) {res:ach}}
+{bind: (3) {res:se}}
+{bind: (4) {res:dep}}
+{p_end}
+
+{com}. 
+. 
+. mi register imputed child-se
+{res}{txt}{p}
+(9165 {it:m}=0 obs. now marked as incomplete)
+{p_end}
+
+{com}. 
+. mi describe 
+
+{txt}{p 2 10 1}
+Style:
+{res:flong}{break}
+{break}last {bf:mi update} 25mar2023 10:29:29,
+2 seconds ago
+
+  Obs.:   complete  {res}      9,009
+{txt}{col 11}incomplete{res}      9,165{txt}  ({it:M} = {res:0} imputations)
+{col 11}{hline 21}
+{col 11}total     {res}     18,174
+
+{txt}{p 2 20 1}
+Vars.:  imputed:  11;
+child({res:1025})
+race({res:44})
+sex({res:39})
+income({res:4644})
+mar({res:4775})
+health({res:5592})
+under18({res:4820})
+over18({res:4820})
+dep({res:5713})
+ach({res:1240})
+se({res:2657})
+{p_end}
+
+{p 10 20 1}
+passive:  0
+{p_end}
+
+{p 10 20 1}
+regular:  0
+{p_end}
+
+{p 10 20 1}
+system:{bind:   }3;
+_mi_m _mi_id _mi_miss
+{p_end}
+
+{p 9 4 1}
+(there are 102 unregistered variables)
+{p_end}
+
+{com}. 
+. mi impute chained (regress) dep ach income under18 over18 (logit) sex (mlogit)  race mar (ologit) health, augment  add (10) rseed (123) dots
+{res}
+{txt}Conditional models:
+{p 15 21 2}
+{bf:sex}: logit sex i.race ach income i.mar under18 over18 i.health dep , augment
+{p_end}
+{p 14 21 2}
+{bf:race}: mlogit race i.sex ach income i.mar under18 over18 i.health dep , augment
+{p_end}
+{p 15 21 2}
+{bf:ach}: regress ach i.sex i.race income i.mar under18 over18 i.health dep
+{p_end}
+{p 12 21 2}
+{bf:income}: regress income i.sex i.race ach i.mar under18 over18 i.health dep
+{p_end}
+{p 15 21 2}
+{bf:mar}: mlogit mar i.sex i.race ach income under18 over18 i.health dep , augment
+{p_end}
+{p 11 21 2}
+{bf:under18}: regress under18 i.sex i.race ach income i.mar over18 i.health dep
+{p_end}
+{p 12 21 2}
+{bf:over18}: regress over18 i.sex i.race ach income i.mar under18 i.health dep
+{p_end}
+{p 12 21 2}
+{bf:health}: ologit health i.sex i.race ach income i.mar under18 over18 dep , augment
+{p_end}
+{p 15 21 2}
+{bf:dep}: regress dep i.sex i.race ach income i.mar under18 over18 i.health
+{p_end}
+
+{res}{txt}Performing chained iterations:
+{col 3}imputing {it:m}=1 through {it:m}=10 {res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}.{res}{txt}10 done
+{res}{txt}
+Multivariate imputation{txt}{col 45}{ralign 12:Imputations }= {res}      10
+{txt}Chained equations{txt}{col 45}{ralign 12:added }= {res}      10
+{txt}Imputed: {it:m}=1 through {it:m}=10{txt}{col 45}{ralign 12:updated }= {res}       0
+
+{txt}Initialization: {res}monotone{txt}{col 45}{ralign 12:Iterations }= {res}     100
+{txt}{col 45}{ralign 12:burn-in }= {res}      10
+
+{txt}{p 15 15 2}{bf:dep}: linear regression{p_end}
+{txt}{p 15 15 2}{bf:ach}: linear regression{p_end}
+{txt}{p 12 15 2}{bf:income}: linear regression{p_end}
+{txt}{p 11 15 2}{bf:under18}: linear regression{p_end}
+{txt}{p 12 15 2}{bf:over18}: linear regression{p_end}
+{txt}{p 15 15 2}{bf:sex}: logistic regression{p_end}
+{txt}{p 14 15 2}{bf:race}: multinomial logistic regression{p_end}
+{txt}{p 15 15 2}{bf:mar}: multinomial logistic regression{p_end}
+{txt}{p 12 15 2}{bf:health}: ordered logistic regression{p_end}
+
+{txt}{hline 19}{c TT}{hline 35}{hline 11}
+{txt}{col 20}{c |}{center 46:  Observations per {it:m}}
+{txt}{col 20}{c LT}{hline 35}{c TT}{hline 10}
+{txt}{col 11}Variable {c |}{ralign 12:Complete }{ralign 13:Incomplete }{ralign 10:Imputed }{c |}{ralign 10:Total}
+{hline 19}{c +}{hline 35}{c +}{hline 10}
+{txt}{ralign 19:dep }{c |}{res}      12461         5713      5713 {txt}{c |}{res}     18174
+{txt}{ralign 19:ach }{c |}{res}      16934         1240      1240 {txt}{c |}{res}     18174
+{txt}{ralign 19:income }{c |}{res}      13530         4644      4644 {txt}{c |}{res}     18174
+{txt}{ralign 19:under18 }{c |}{res}      13354         4820      4820 {txt}{c |}{res}     18174
+{txt}{ralign 19:over18 }{c |}{res}      13354         4820      4820 {txt}{c |}{res}     18174
+{txt}{ralign 19:sex }{c |}{res}      18135           39        39 {txt}{c |}{res}     18174
+{txt}{ralign 19:race }{c |}{res}      18130           44        44 {txt}{c |}{res}     18174
+{txt}{ralign 19:mar }{c |}{res}      13399         4775      4775 {txt}{c |}{res}     18174
+{txt}{ralign 19:health }{c |}{res}      12582         5592      5592 {txt}{c |}{res}     18174
+{txt}{hline 19}{c BT}{hline 35}{c BT}{hline 10}
+{p 0 1 1 66}(complete + incomplete = total; imputed is the minimum across {it:m}
+ of the number of filled-in observations.){p_end}
+
+{com}. 
+. edit _mi_m
+{txt}
+{com}. sort _mi_id
+{txt}
+{com}. edit _mi_m _mi_id
+{txt}
+{com}. sort _mi_id _mi_m
+{txt}
+{com}. 
+. mi xeq: sum dep ach se child
+{res}
+{txt}{it:m}=0 data:
+{res}{txt}-> {res}sum dep ach se child
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}dep {c |}{res}     12,461    16.37926    5.005612         12         48
+{txt}{space 9}ach {c |}{res}     16,934    149.1365    29.73221    62.3247   268.6308
+{txt}{space 10}se {c |}{res}     15,517    9.465379    .9061259        4.6       14.3
+{txt}{space 7}child {c |}{res}     17,149    15.14485    2.796206          0         18
+
+{txt}{it:m}=1 data:
+-> {res}sum dep ach se child
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}dep {c |}{res}     18,174    16.53246    5.041623  -1.482668         48
+{txt}{space 9}ach {c |}{res}     18,174    148.9418     29.7436    62.3247   268.6308
+{txt}{space 10}se {c |}{res}     15,517    9.465379    .9061259        4.6       14.3
+{txt}{space 7}child {c |}{res}     17,149    15.14485    2.796206          0         18
+
+{txt}{it:m}=2 data:
+-> {res}sum dep ach se child
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}dep {c |}{res}     18,174    16.51423    5.002346  -1.573741         48
+{txt}{space 9}ach {c |}{res}     18,174    148.9274      29.757   59.89296   268.6308
+{txt}{space 10}se {c |}{res}     15,517    9.465379    .9061259        4.6       14.3
+{txt}{space 7}child {c |}{res}     17,149    15.14485    2.796206          0         18
+
+{txt}{it:m}=3 data:
+-> {res}sum dep ach se child
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}dep {c |}{res}     18,174    16.47284    5.000821  -.8400715         48
+{txt}{space 9}ach {c |}{res}     18,174    148.8454     29.8067   48.31902   268.6308
+{txt}{space 10}se {c |}{res}     15,517    9.465379    .9061259        4.6       14.3
+{txt}{space 7}child {c |}{res}     17,149    15.14485    2.796206          0         18
+
+{txt}{it:m}=4 data:
+-> {res}sum dep ach se child
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}dep {c |}{res}     18,174    16.51656    5.020588  -.8684093         48
+{txt}{space 9}ach {c |}{res}     18,174     148.845    29.75825   48.47476   268.6308
+{txt}{space 10}se {c |}{res}     15,517    9.465379    .9061259        4.6       14.3
+{txt}{space 7}child {c |}{res}     17,149    15.14485    2.796206          0         18
+
+{txt}{it:m}=5 data:
+-> {res}sum dep ach se child
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}dep {c |}{res}     18,174    16.49902    5.012178  -.4339111         48
+{txt}{space 9}ach {c |}{res}     18,174    148.8818    29.71546   47.86132   268.6308
+{txt}{space 10}se {c |}{res}     15,517    9.465379    .9061259        4.6       14.3
+{txt}{space 7}child {c |}{res}     17,149    15.14485    2.796206          0         18
+
+{txt}{it:m}=6 data:
+-> {res}sum dep ach se child
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}dep {c |}{res}     18,174     16.4977    5.010579   .3261533         48
+{txt}{space 9}ach {c |}{res}     18,174    148.9145    29.72263   61.14117   268.6308
+{txt}{space 10}se {c |}{res}     15,517    9.465379    .9061259        4.6       14.3
+{txt}{space 7}child {c |}{res}     17,149    15.14485    2.796206          0         18
+
+{txt}{it:m}=7 data:
+-> {res}sum dep ach se child
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}dep {c |}{res}     18,174    16.48964    5.001899   .4365681         48
+{txt}{space 9}ach {c |}{res}     18,174    148.9475    29.77811   53.46907   268.6308
+{txt}{space 10}se {c |}{res}     15,517    9.465379    .9061259        4.6       14.3
+{txt}{space 7}child {c |}{res}     17,149    15.14485    2.796206          0         18
+
+{txt}{it:m}=8 data:
+-> {res}sum dep ach se child
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}dep {c |}{res}     18,174     16.4715    4.998749  -3.460541         48
+{txt}{space 9}ach {c |}{res}     18,174    148.8171    29.73098    62.3247   268.6308
+{txt}{space 10}se {c |}{res}     15,517    9.465379    .9061259        4.6       14.3
+{txt}{space 7}child {c |}{res}     17,149    15.14485    2.796206          0         18
+
+{txt}{it:m}=9 data:
+-> {res}sum dep ach se child
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}dep {c |}{res}     18,174    16.51261    5.008361  -1.417716         48
+{txt}{space 9}ach {c |}{res}     18,174    148.8077    29.75907   61.52005   268.6308
+{txt}{space 10}se {c |}{res}     15,517    9.465379    .9061259        4.6       14.3
+{txt}{space 7}child {c |}{res}     17,149    15.14485    2.796206          0         18
+
+{txt}{it:m}=10 data:
+-> {res}sum dep ach se child
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 9}dep {c |}{res}     18,174    16.51683    5.035359  -1.581981         48
+{txt}{space 9}ach {c |}{res}     18,174    148.8279    29.77448   53.23438   268.6308
+{txt}{space 10}se {c |}{res}     15,517    9.465379    .9061259        4.6       14.3
+{txt}{space 7}child {c |}{res}     17,149    15.14485    2.796206          0         18
+{txt}
+{com}. mi xeq: corr dep ach se child 
+{res}
+{txt}{it:m}=0 data:
+{res}{txt}-> {res}corr dep ach se child
+{txt}(obs=10,811)
+
+             {c |}      dep      ach       se    child
+{hline 13}{c +}{hline 36}
+         dep {c |}{res}   1.0000
+         {txt}ach {c |}{res}  -0.1081   1.0000
+          {txt}se {c |}{res}   0.0165   0.1138   1.0000
+       {txt}child {c |}{res}  -0.0569   0.3440   0.0620   1.0000
+
+
+{txt}{it:m}=1 data:
+-> {res}corr dep ach se child
+{txt}(obs=15,366)
+
+             {c |}      dep      ach       se    child
+{hline 13}{c +}{hline 36}
+         dep {c |}{res}   1.0000
+         {txt}ach {c |}{res}  -0.1016   1.0000
+          {txt}se {c |}{res}   0.0056   0.1191   1.0000
+       {txt}child {c |}{res}  -0.0491   0.3438   0.0711   1.0000
+
+
+{txt}{it:m}=2 data:
+-> {res}corr dep ach se child
+{txt}(obs=15,366)
+
+             {c |}      dep      ach       se    child
+{hline 13}{c +}{hline 36}
+         dep {c |}{res}   1.0000
+         {txt}ach {c |}{res}  -0.1190   1.0000
+          {txt}se {c |}{res}   0.0094   0.1191   1.0000
+       {txt}child {c |}{res}  -0.0608   0.3425   0.0711   1.0000
+
+
+{txt}{it:m}=3 data:
+-> {res}corr dep ach se child
+{txt}(obs=15,366)
+
+             {c |}      dep      ach       se    child
+{hline 13}{c +}{hline 36}
+         dep {c |}{res}   1.0000
+         {txt}ach {c |}{res}  -0.1023   1.0000
+          {txt}se {c |}{res}   0.0085   0.1200   1.0000
+       {txt}child {c |}{res}  -0.0534   0.3436   0.0711   1.0000
+
+
+{txt}{it:m}=4 data:
+-> {res}corr dep ach se child
+{txt}(obs=15,366)
+
+             {c |}      dep      ach       se    child
+{hline 13}{c +}{hline 36}
+         dep {c |}{res}   1.0000
+         {txt}ach {c |}{res}  -0.1140   1.0000
+          {txt}se {c |}{res}   0.0090   0.1195   1.0000
+       {txt}child {c |}{res}  -0.0543   0.3429   0.0711   1.0000
+
+
+{txt}{it:m}=5 data:
+-> {res}corr dep ach se child
+{txt}(obs=15,366)
+
+             {c |}      dep      ach       se    child
+{hline 13}{c +}{hline 36}
+         dep {c |}{res}   1.0000
+         {txt}ach {c |}{res}  -0.1107   1.0000
+          {txt}se {c |}{res}   0.0034   0.1192   1.0000
+       {txt}child {c |}{res}  -0.0500   0.3417   0.0711   1.0000
+
+
+{txt}{it:m}=6 data:
+-> {res}corr dep ach se child
+{txt}(obs=15,366)
+
+             {c |}      dep      ach       se    child
+{hline 13}{c +}{hline 36}
+         dep {c |}{res}   1.0000
+         {txt}ach {c |}{res}  -0.1051   1.0000
+          {txt}se {c |}{res}   0.0093   0.1194   1.0000
+       {txt}child {c |}{res}  -0.0576   0.3397   0.0711   1.0000
+
+
+{txt}{it:m}=7 data:
+-> {res}corr dep ach se child
+{txt}(obs=15,366)
+
+             {c |}      dep      ach       se    child
+{hline 13}{c +}{hline 36}
+         dep {c |}{res}   1.0000
+         {txt}ach {c |}{res}  -0.1110   1.0000
+          {txt}se {c |}{res}   0.0071   0.1191   1.0000
+       {txt}child {c |}{res}  -0.0503   0.3422   0.0711   1.0000
+
+
+{txt}{it:m}=8 data:
+-> {res}corr dep ach se child
+{txt}(obs=15,366)
+
+             {c |}      dep      ach       se    child
+{hline 13}{c +}{hline 36}
+         dep {c |}{res}   1.0000
+         {txt}ach {c |}{res}  -0.1026   1.0000
+          {txt}se {c |}{res}   0.0027   0.1200   1.0000
+       {txt}child {c |}{res}  -0.0445   0.3430   0.0711   1.0000
+
+
+{txt}{it:m}=9 data:
+-> {res}corr dep ach se child
+{txt}(obs=15,366)
+
+             {c |}      dep      ach       se    child
+{hline 13}{c +}{hline 36}
+         dep {c |}{res}   1.0000
+         {txt}ach {c |}{res}  -0.1071   1.0000
+          {txt}se {c |}{res}   0.0134   0.1188   1.0000
+       {txt}child {c |}{res}  -0.0556   0.3415   0.0711   1.0000
+
+
+{txt}{it:m}=10 data:
+-> {res}corr dep ach se child
+{txt}(obs=15,366)
+
+             {c |}      dep      ach       se    child
+{hline 13}{c +}{hline 36}
+         dep {c |}{res}   1.0000
+         {txt}ach {c |}{res}  -0.1182   1.0000
+          {txt}se {c |}{res}   0.0064   0.1169   1.0000
+       {txt}child {c |}{res}  -0.0481   0.3403   0.0711   1.0000
+
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. 
+. 
+. 
+{txt}end of do-file
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\cho.710\Desktop\missing data hw.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}25 Mar 2023, 10:33:47
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
